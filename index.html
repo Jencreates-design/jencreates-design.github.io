@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Jen Elias – Web Builder & Digital Support</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Inter:wght@300;400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- FULL-WIDTH BANNER WITH HORIZONTAL LOGO -->
+    <div class="banner">
+        <img src="images/logo-horizontal.png" alt="Jen Elias horizontal banner logo">
+    </div>
+
+    <!-- NAVIGATION -->
+    <header>
+        <nav aria-label="Main navigation">
+            <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+                <span class="visually-hidden">Toggle navigation</span>
+            </button>
+
+            <div id="nav-links" class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+
+        <!-- HERO -->
+        <section id="home" class="hero" aria-labelledby="hero-heading">
+            <div class="hero-inner">
+                <h1 id="hero-heading">Maria “Jen” Elias</h1>
+                <h2 class="hero-subtitle">Web Builder &amp; Digital Support</h2>
+                <p>
+                    I help small businesses, carers, and community groups bring their ideas online
+                    with clarity, warmth, and calm structure.
+                </p>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="section" aria-labelledby="about-heading">
+            <div class="section-inner">
+                <h2 id="about-heading">About Me</h2>
+                <p>
+                    I build clean, accessible websites with a gentle, supportive approach.
+                    My work blends technical clarity with warmth — helping people feel confident,
+                    organised, and empowered online.
+                </p>
+            </div>
+        </section>
+
+        <!-- SERVICES -->
+        <section id="services" class="section" aria-labelledby="services-heading">
+            <div class="section-inner">
+                <h2 id="services-heading">Services</h2>
+                <ul class="services-list">
+                    <li>Website creation &amp; redesign</li>
+                    <li>Digital support &amp; troubleshooting</li>
+                    <li>Content updates &amp; maintenance</li>
+                    <li>Form setup &amp; integrations</li>
+                    <li>Parent/carer group website support</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- PORTFOLIO -->
+        <section id="portfolio" class="section" aria-labelledby="portfolio-heading">
+            <div class="section-inner">
+                <h2 id="portfolio-heading">Portfolio</h2>
+                <p>Coming soon — new projects are on the way.</p>
+            </div>
+        </section>
+
+        <!-- TESTIMONIALS -->
+        <section id="testimonials" class="section" aria-labelledby="testimonials-heading">
+            <div class="section-inner">
+                <h2 id="testimonials-heading">Testimonials</h2>
+                <p>Testimonials from clients and collaborators will appear here as they are added.</p>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="section" aria-labelledby="contact-heading">
+            <div class="section-inner">
+                <h2 id="contact-heading">Contact Me</h2>
+
+                <form action="https://formspree.io/f/xvzwewvl" method="POST" class="contact-form"
+                    aria-describedby="contact-help">
+                    <p id="contact-help">
+                        Fill in the form below and I’ll get back to you as soon as I can.
+                    </p>
+
+                    <div class="form-group">
+                        <label for="name">Name<span class="required-indicator"> *</span></label>
+                        <input type="text" id="name" name="name" required autocomplete="name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email<span class="required-indicator"> *</span></label>
+                        <input type="email" id="email" name="email" required autocomplete="email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message<span class="required-indicator"> *</span></label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+
+                    <!-- Honeypot -->
+                    <input type="text" name="_gotcha" class="visually-hidden" tabindex="-1" autocomplete="off">
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Jen Elias</p>
+
+        <div class="socials" aria-label="Social links">
+            <a href="https://www.linkedin.com/in/maria-elias-69271918a" target="_blank" rel="noopener noreferrer">
+                LinkedIn
+            </a>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
